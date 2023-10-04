@@ -12,5 +12,5 @@ https://marialeonel.github.io/trainee-unect/
 [BANNER]
   <li> como não deixar que isso sobreponha o footer? (e tambem outras sessoes que vou construindo, como não deixar que sobreponham?)</li>
 [FOOTER]
-  <li> o que é aquela linha que fica embaixo das informações de contatos? Ela também aparece no header. Eu percebi que não é uma linha comum de <a href="">elemento <a> </a>.</li>
+  <li> o que é aquela linha que fica embaixo das informações de contatos? Ela também aparece no header. Eu percebi que não é uma linha comum de <a href="">elemento a href </a>.</li>
 </ul>
