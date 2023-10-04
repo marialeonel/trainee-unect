@@ -5,7 +5,6 @@ https://marialeonel.github.io/trainee-unect/
 ## Duvidas
 - Eu nao sei muito sobre responsividade (eu sei só o basico), como posso ir deixando repsonsivo aos poucos (sem ter que me preocupar com isso muito perto do prazo)?
 - a folha de estilo index.css, tem tipo, configurações gerais? por exemplo, mexer no body{}? Não entendi o que possa ter nela
-- por que "ul" para Inicio, Contatos, etc?
 
 <ul>
 [HEADER]
