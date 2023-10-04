@@ -1,0 +1,55 @@
+:root {
+    --quase_preto: #000205;
+    --azul_escuro: #1F64C5;
+    --azul_claro: #226ED8;
+    --amarelo: #CFDD19;
+    --cinza_claro: #F2F3F4;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        height: 80px;
+    }
+
+    .Logo {
+        width: 41px;
+        height: 55.263px;
+    }
+}
+
+.header {
+    background-color: #1F64C5;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    display:flex;
+}
+
+img {
+    margin-left: 20px;
+}
+.Logo {
+    padding: 150px;
+}
+
+.Menu {
+    padding: 150px;
+}
+
+.Htxt1 {
+    text-decoration: none;
+    color: var(--cinza_claro);
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 30px;
+    margin: auto;
+
+}
+
+/*Nao entendi porque que tem o ul ali*/
+
+.Htxt1:hover {
+    text-decoration: underline;
+    color: var(--amarelo);
+}
+

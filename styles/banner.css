@@ -1,0 +1,43 @@
+:root {
+    --quase_preto: #000205;
+    --azul_escuro: #1F64C5;
+    --azul_claro: #226ED8;
+    --amarelo: #CFDD19;
+    --cinza_claro: #F2F3F4;
+}
+
+.EXP {
+    background-image: url('../Fotos/time_foto.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 1066px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(45.83%);
+    overflow: hidden;
+}
+
+.EXPtxt {
+    text-align: center;
+    margin-top: -500px; 
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.CEtxt {
+    color: white;
+}
+
+.underlined-text {
+    text-decoration: underline;
+    text-underline-offset: 25px;
+    margin-right: 37px;
+    font-family: Ubuntu;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 9px;
+    color: var(--amarelo);
+}

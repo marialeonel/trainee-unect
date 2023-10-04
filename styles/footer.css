@@ -1,0 +1,88 @@
+:root {
+    --quase_preto: #000205;
+    --azul_escuro: #1F64C5;
+    --azul_claro: #226ED8;
+    --amarelo: #CFDD19;
+    --cinza_claro: #F2F3F4;
+}
+
+footer {
+    background-color: #494a4b;
+}
+
+.colunaF {
+    margin-top: 60px;
+    width: 25%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 250px;
+    text-align: left;
+    padding-left: 150px;
+    margin-bottom: 200px;
+}
+
+.Ftxt1 {
+    color: var(--cinza_claro);
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Ftxt2 {
+    color: var(--cinza_claro);
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.Ftxt3, .Ftxt4{
+    color:var(--cinza_claro);
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:normal;
+    letter-spacing: 1px;
+    text-underline-offset: 10px;
+    transition: color 0.5s, text-decoration 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.Ftxt3:hover {
+    color:var(--azul_escuro);
+    border-bottom: 3px solid var(--azul_escuro);
+    padding-bottom: 8px;
+}
+
+.Fimg1 {
+    margin-top: 30px;
+    display: flex;
+}
+
+#animated_image {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/*nao entendi como ta funcionando a troca do isntagram branco pro azul e como fazer ele animado*/
+#animated_image:hover {
+    transform: translateY(-5px);
+}
+
+a {
+    text-decoration:none;
+}
+
+
+a:hover{
+    color:var(--azul_claro);
+   
+}
+

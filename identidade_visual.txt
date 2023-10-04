@@ -1,0 +1,12 @@
+Dimensão mínima do logotipo: 64px
+
+LOGO Unect (font-family): Lee Haus Sans
+Textos (font-family): Ubuntu
+
+Cores:
+HEX #000205 - quase preto
+HEX #1F64C5 - azul escuro
+HEX #226ED8 - azul claro
+HEX #CFDD19 - amarelo
+HEX #F2F3F4 - cinza_claro
+
