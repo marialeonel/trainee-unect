@@ -6,11 +6,36 @@
     --cinza_claro: #F2F3F4;
 }
 
+@media screen and (max-width: 1014px) {
+    h1.Ftxt1 {
+        font-size: 22px;
+    }
+
+    p.Ftxt2, p.Ftxt3, p.Ftxt4 {
+        font-size: 18px;
+    }
+
+    img.Fimg2 {
+        display: none;
+    }
+
+    div.colunaF {
+        display: flex;
+        flex-direction: column; /* Empilhar verticalmente os elementos dentro da coluna */
+        align-items: center; /* Alinhar os elementos horizontalmente ao centro */
+        text-align: center; /* Centralizar o texto */
+    }
+}
+
 footer {
     background-color: #494a4b;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
 }
 
 .colunaF {
+    display: block;
     margin-top: 60px;
     width: 25%;
     float: left;
@@ -52,7 +77,11 @@ footer {
     text-underline-offset: 10px;
     transition: color 0.5s, text-decoration 0.5s;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 0px;
+}
+
+p.Ftxt3 {
+
 }
 
 .Ftxt3:hover {
@@ -71,7 +100,6 @@ footer {
     cursor: pointer;
 }
 
-/*nao entendi como ta funcionando a troca do isntagram branco pro azul e como fazer ele animado*/
 #animated_image:hover {
     transform: translateY(-5px);
 }

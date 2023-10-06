@@ -8,8 +8,8 @@
     --cinza_claro: #F2F3F4;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+body, html {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Ubuntu', sans-serif;
 }

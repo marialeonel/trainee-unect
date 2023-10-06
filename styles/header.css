@@ -6,14 +6,20 @@
     --cinza_claro: #F2F3F4;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .header {
-        height: 80px;
+@media screen and (max-width: 1102px) {
+    header.header {
+        height: 15vh;
     }
 
     .Logo {
         width: 41px;
         height: 55.263px;
+        margin-left: -20px;
+
+    }
+
+    .Menu {
+        display: none;
     }
 }
 
@@ -21,20 +27,12 @@
     background-color: #1F64C5;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
+    height: 35vh;
     display:flex;
+    padding: 0px 150px;
 }
 
-img {
-    margin-left: 20px;
-}
-.Logo {
-    padding: 150px;
-}
 
-.Menu {
-    padding: 150px;
-}
 
 .Htxt1 {
     text-decoration: none;
@@ -45,8 +43,6 @@ img {
     margin: auto;
 
 }
-
-/*Nao entendi porque que tem o ul ali*/
 
 .Htxt1:hover {
     text-decoration: underline;

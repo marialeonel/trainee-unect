@@ -6,38 +6,62 @@
     --cinza_claro: #F2F3F4;
 }
 
+section#banner {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+@media screen and (max-width: 763px) {
+    span.CEtxt {
+        color: var(--amarelo);
+    }
+
+    span.underlined-text{
+        font-size: 2em;
+        text-underline-offset: 8px;
+    }
+
+    div.EXPtxt {
+        bottom: 450px;
+    }
+
+}
+
 .EXP {
-    background-image: url('../Fotos/time_foto.png'); 
+    background-image: url('../Fotos/time_foto.png');  
+    background-color:  #494a4b;
     background-size: cover;
     background-position: center;
-    height: 1066px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     filter: brightness(45.83%);
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .EXPtxt {
     text-align: center;
-    margin-top: -500px; 
+    bottom: 500px;
     position: relative;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.CEtxt {
+ .CEtxt {
     color: white;
-}
+} 
 
-.underlined-text {
+ .underlined-text {
     text-decoration: underline;
-    text-underline-offset: 25px;
+    text-underline-offset: 25px; 
     margin-right: 37px;
     font-family: Ubuntu;
-    font-size: 90px;
+    font-size: 6em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 9px;
     color: var(--amarelo);
-}
+
+} 
