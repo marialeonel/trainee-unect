@@ -33,12 +33,13 @@ section#banner {
     background-color:  #494a4b;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    height: 1066px;
     display: flex;
     justify-content: center;
     align-items: center;
     filter: brightness(45.83%);
     overflow: hidden; 
+    flex-shrink: 0;
 }
 
 .EXPtxt {
@@ -57,7 +58,7 @@ section#banner {
     text-underline-offset: 25px; 
     margin-right: 37px;
     font-family: Ubuntu;
-    font-size: 6em;
+    font-size: 5.6em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;

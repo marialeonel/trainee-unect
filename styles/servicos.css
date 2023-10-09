@@ -1,6 +1,51 @@
 #servicos {
     background-image: url(../Fotos/fundo_textura.png);
     background-size: cover;
-    height: 1000px;
+    height: 1074px;
+    margin: 0px;
+}
+
+.DivServ {
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.NStitulo {
+    color: rgba(242, 243, 244, 0.80);
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin: 0px;
+}
+
+.NSCarrossel {
+    display: flex;
+    margin-left: 200px;
+}
+.NSsubtitulo {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.NSCards1 {
+    width: 360px;
+    height: 475px;
+    flex-shrink: 0;
+    background-color: blue;
+}
+
+.NSCards {
+    width: 360px;
+    height: 475px;
+    flex-shrink: 0;
+    background-color: blue;
 }
 

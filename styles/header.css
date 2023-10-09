@@ -12,8 +12,7 @@
     }
 
     .Logo {
-        width: 41px;
-        height: 55.263px;
+        height: 55px;
         margin-left: -20px;
 
     }
@@ -27,11 +26,16 @@
     background-color: #1F64C5;
     justify-content: space-between;
     align-items: center;
-    height: 35vh;
+    height: 140px;
     display:flex;
     padding: 0px 150px;
 }
 
+.Logo {
+    height: 88px;
+    margin-left: -20px;
+
+}
 
 
 .Htxt1 {
