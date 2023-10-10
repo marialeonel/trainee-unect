@@ -1,3 +1,11 @@
+:root {
+    --quase_preto: #000205;
+    --azul_escuro: #1F64C5;
+    --azul_claro: #226ED8;
+    --amarelo: #CFDD19;
+    --cinza_claro: #F2F3F4;
+}
+
 #servicos {
     background-image: url(../Fotos/fundo_textura.png);
     background-size: cover;
@@ -6,7 +14,7 @@
 }
 
 .DivServ {
-    padding-left: 50px;
+    padding-left: 100px;
     padding-top: 50px;
 }
 
@@ -24,6 +32,8 @@
 .NSCarrossel {
     display: flex;
     margin-left: 200px;
+    column-gap: 30px;
+    
 }
 .NSsubtitulo {
     color: #FFF;
@@ -35,17 +45,13 @@
     letter-spacing: 2px;
 }
 
-.NSCards1 {
-    width: 360px;
-    height: 475px;
-    flex-shrink: 0;
-    background-color: blue;
-}
-
 .NSCards {
+    margin-top: 100px;
     width: 360px;
     height: 475px;
     flex-shrink: 0;
-    background-color: blue;
+    background-color: var(--azul_claro);
+    border-radius: 20px;
+    
 }
 
