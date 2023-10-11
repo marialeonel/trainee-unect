@@ -31,7 +31,7 @@
 
 .NSCarrossel {
     display: flex;
-    margin-left: 200px;
+    margin-left: 300px;
     column-gap: 30px;
     
 }
@@ -47,11 +47,52 @@
 
 .NSCards {
     margin-top: 100px;
-    width: 360px;
-    height: 475px;
+    width: 275px;
+    height: 360px;
     flex-shrink: 0;
     background-color: var(--azul_claro);
     border-radius: 20px;
+    text-align: center;
+    color: white;
     
 }
 
+#icone-browser {
+    margin-top: 30px;
+    height: 60px;
+
+}
+
+.NStxt1 {
+    font-size: 16px;
+}
+
+.NStxt2 {
+    color:var(--amarelo);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    margin: 0 15px;
+    text-decoration: underline;
+}
+
+.NStxt3 {
+    color: var(--unect-branco, #F2F3F4);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 35px;
+}
+
+#PontoCard {
+    color:var(--amarelo);
+    padding-bottom: 5px;
+}
