@@ -9,7 +9,7 @@
 section#banner {
     margin: 0px;
     padding: 0px;
-    height: 100%;
+    height: 100vh;
 }
 
 @media screen and (max-width: 763px) {
@@ -33,18 +33,17 @@ section#banner {
     background-color:  #494a4b;
     background-size: cover;
     background-position: center;
-    height: 1066px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     filter: brightness(45.83%);
     overflow: hidden; 
-    flex-shrink: 0;
 }
 
 .EXPtxt {
     text-align: center;
-    bottom: 500px;
+    bottom: 360px;
     position: relative;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -58,7 +57,7 @@ section#banner {
     text-underline-offset: 25px; 
     margin-right: 37px;
     font-family: Ubuntu;
-    font-size: 5.6em;
+    font-size: 5.4em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
