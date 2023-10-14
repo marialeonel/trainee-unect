@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+#portifolios {
+    background-image: url(../Fotos/fundo-branco-1.png);
+    height: 100vh;
+}
+
+div.container-portfolios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px; 
+}
+
+p.titulo {
+    font-family: ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(31, 100, 197, 0.90);
+    padding-bottom: 10px;
+    margin: 0px 0px 0px 200px;
+    padding-top: 50px;
+}
+
+p.subtitulo {
+    font-family: Nunito;
+    font-size: 35px;
+    font-weight: 700;
+    color: #1F64C5;
+    padding-bottom: 58px;
+    position: relative;
+    margin: 0px 0px 0px 200px;
+}
+
+#imagem-artus, #imagem-cesep, #imagem-ecotech, #imagem-select, #imagem-bricks, #imagem-inception, #imagem-cotton, #imagem-zampro, #imagem-ecae, #imagem-paraiso, #imagem-titanus, #imagem-cocriagro {
+    transition: transform 0.3s;
+    margin: auto; /* Centraliza o conteúdo verticalmente */
+    margin-left: 80px; /* Adicione margem à esquerda (espaço entre elementos) */
+    margin-right: 5px;
+
+
+}
+#imagem-artus:hover, #imagem-cesep:hover, #imagem-ecotech:hover, #imagem-select:hover, #imagem-bricks:hover, #imagem-inception:hover, #imagem-cotton:hover, #imagem-zampro:hover, #imagem-ecae:hover, #imagem-paraiso:hover, #imagem-titanus:hover, #imagem-cocriagro:hover {
+    filter: brightness(0.5);
+    transform: translateY(-20px);
+
+}
+
+@media screen and (max-width: 1448px) {
+    div.container-portfolios {
+        grid-template-columns: repeat(1, 1fr); 
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1414px) {
+    div.container-portfolios {
+        grid-template-columns: repeat(3, 1fr); 
+        text-align: center;
+    }
+
+    #imagem-artus, #imagem-cesep, #imagem-ecotech, #imagem-select, #imagem-bricks, #imagem-inception, #imagem-cotton, #imagem-zampro, #imagem-ecae, #imagem-paraiso, #imagem-titanus, #imagem-cocriagro {
+        margin-left: 0px; /* Adicione margem à esquerda (espaço entre elementos) */
+    }
+
+    #imagem-artus img, #imagem-cesep img, #imagem-ecotech img, #imagem-select img, #imagem-bricks img, #imagem-inception img, #imagem-cotton img, #imagem-zampro img, #imagem-ecae img, #imagem-paraiso img, #imagem-titanus img, #imagem-cocriagro img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    div.container-portfolios {
+        grid-template-columns: repeat(2, 1fr); 
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 618px) {
+    p.titulo, p.subtitulo {
+        margin: 40px;
+    } 
+
+    div.container-portfolios {
+        grid-template-columns: repeat(1, 1fr); 
+        text-align: center;
+    }
+
+}
+
+
+

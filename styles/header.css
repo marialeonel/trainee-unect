@@ -18,9 +18,9 @@
 .Logo {
     height: 88px;
     margin-left: -20px;
+    margin-top: 20px;
 
 }
-
 
 .Htxt1 {
     text-decoration: none;
@@ -37,21 +37,21 @@
     color: var(--amarelo);
 }
 
-#hamburguer {
+#close, #hamburguer {
     display: none;
 }
 
-.menu-mobile {
-    display: none;
-}
+
+
 
 @media screen and (max-width: 1102px) {
     header.header {
         height: 15vh;
+        position: sticky;
     }
 
     div > img.Logo {
-        height: 65px;
+        height: 64px;
         margin-left: -20px;
 
     }
@@ -64,9 +64,52 @@
     #hamburguer {
         display: block;
         color: white; 
+        margin-top: 20px;
     }
 
+    nav.menu-mobile{
+        display: flex;
+        flex-direction: column;
+        background-color:#174e9b;
+        position: sticky;
+    }
 
+    nav.menu-mobile > ul > li{
+        color: white;
+        display: flex;
+        width: 325x;
+        height: 20px;
+        margin: 10px 40px 0px 10px;
+        padding: 12px 16px;
+        background-color: var(--azul_escuro);
+        border-radius: 6px;
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
 
+    nav.menu-mobile > ul > li > a {
+        color: white;
+    }
+
+    span#close {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header.header {
+        justify-content: space-between;
+    }
+
+    #hamburguer {
+        margin-left: 80px;
+    }
+
+    .Logo {
+        float: left;
+    }
+    
 }
 

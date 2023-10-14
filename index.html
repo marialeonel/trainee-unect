@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>UNECT</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header class="header">
         <div>
             <img class="Logo" src="Fotos/logo.png" alt="Logo">
         </div>
-        <!-- <div class="Menu">
+        <div class="Menu">
             <ul class="Htxt1">Início</ul>
             <a href="#servicos">
                 <ul class="Htxt1">Serviços</ul>
@@ -32,21 +32,26 @@
             <a href="#contato">
                 <ul class="Htxt1">Contato</ul>
             </a>
-        </div> -->
-         <menu>
-            <ul>
-                <li><a href="#">Opcao 1</a></li>
-                <li><a href="#">Opcao 2</a></li>
-                <li><a href="#">Opcao 3</a></li>
-                <li><a href="#">Opcao 4</a></li>
-                <li><a href="#">Opcao 5</a></li>
-            </ul>
-         </menu>
-        <span id="hamburguer" class="material-symbols-outlined">
+        </div> 
+         <span id="hamburguer" class="material-symbols-outlined" onclick="toggleMenu()">
             menu
         </span>
+
+        <span id="close" class="material-symbols-outlined" onclick="toggleMenu()">
+            close
+        </span>
+        
             
     </header>
+    <!-- <nav id="menu-mobile">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#portifolios">Portfólio</a></li>
+            <li><a href="#sobre-nos">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav> -->
 
     <section id="banner">
         <div class="EXP">
@@ -127,7 +132,90 @@
         
     </section>
     <section id="portifolios">
-        
+        <p class="titulo">Portfólio</p>
+        <p class="subtitulo">Nossos Trabalhos</p>
+        <div class="container-portfolios">
+    
+            <div id="imagem-artus">
+                <a target="_blank" href="https://artusjr.com.br/index.html" class="portifolio">
+                    <!-- <picture>
+                        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+                        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+                        <img src="imagens/grande.png" alt="imagem flexivel">
+                    </picture> -->
+                <img src="Fotos/portfolio/portfolio-artus-1.png" alt="Artus">
+                </a>
+            </div>
+    
+            <div id="imagem-cesep">
+                <a target="_blank" href="http://pos-graduacao-ead.cp.utfpr.edu.br/sistemas_eletricos/" class="portifolio">
+                <img src="Fotos/portfolio/portfolio-cesep-1.png" alt="CESEP">
+                </a>
+            </div>
+    
+            <div id="imagem-ecotech">
+                <a target="_blank" href="https://ecotechstartup.com" class="portifolio">
+                <img src="Fotos/portfolio/portfolio-ecotech-1.png" alt="Eco-Tech">
+                </a>
+            </div>
+    
+            <div id="imagem-select">
+                <a target="_blank" href="https://www.select.eng.br" class="portifolio">
+                <img src="Fotos/portfolio/portfolio-select-1.png" alt="Select">
+                </a>
+            </div>
+    
+            <div id="imagem-bricks">
+                <a target="_blank" href="https://brickengenharia.com/quem-somos/" class="portifolio">
+                <img src="Fotos/portfolio/portfolio-bricks-1.png" alt="BRICK">
+                </a>
+            </div>
+    
+            <div id="imagem-inception">
+                <a target="_blank" href="http://inceptio3d.cp.utfpr.edu.br" class="portifolio">
+                <img src="Fotos/portfolio/portoflio-inception-1.png" alt="">
+                </a>
+            </div>
+    
+            <div id="imagem-cotton">
+                <a target="_blank" href="https://cottonconsultoria.com.br" class="portifolio">
+                <img src="Fotos/portfolio/portfolio-cotton-1.png" alt="">
+                </a>
+            </div>
+    
+            <div id="imagem-zampro">
+                <a href="" class="portifolio">
+                    <img src="Fotos/portfolio/portfolio-zampro-1.png" alt="Zampro">
+                </a>
+            </div>
+    
+            <div id="imagem-ecae">
+                <a target="_blank" href="https://www.ecae.com.br" class="portifolio">
+                <img src="Fotos/portfolio/portfolio-ecae-1.png" alt="ECAE">
+                </a>
+            </div>
+    
+            <div id="imagem-paraiso">
+                <a target="_blank" href="https://www.paraisodascamas.com/?gclid=Cj0KCQjwgNanBhDUARIsAAeIcAu40W_0gFOqhfapbfaxX_ZJ-2Iwi1hMdgqcwmqFZYCC2GaAuVDPvXQaAlBuEALw_wcB" class="portifolio">
+                <img src="Fotos/portfolio/portoflio-paraiso-1.png" alt="Paraiso das Camas">
+                </a>
+            </div>
+    
+            <div id="imagem-titanus">
+                <a target="_blank" href="https://www.titanus.com.br" class="portifolio">
+                <img src="Fotos/portfolio/portfolio-titanus.png" alt="Titanus">
+                </a>
+            </div>
+    
+            <div id="imagem-cocriagro">
+                <a target="_blank" href="https://cocriagro.com.br/empresas-juniores/" class="portifolio">
+                <img src="Fotos/portfolio/portfolio-cocriagro-1.png" alt="Cocriagro">
+                </a>
+            </div>
+      
+        </div>
+
+
     </section>
     <section id="diferenciais"></section>
     <section id="conteudos"></section>
@@ -179,7 +267,26 @@
         </section>
     </footer> 
 
+    <script>
+        let menu_mobile = document.querySelector('.menu-mobile')
 
+        function toggleMenu(){
+            if (menu_mobile.style.display == 'flex') {
+                menu_mobile.style.display = 'none'
+            } else {
+                menu_mobile.style.display = 'flex'
+            }
+        }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 1102) {
+                menu_mobile.style.display= 'block'
+            } else {
+                menu_mobile.style.display = 'none'
+            }
+        }
+
+    </script>
 
 </body>
 </html>

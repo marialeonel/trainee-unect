@@ -126,3 +126,120 @@
     box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.50);
 
 }
+
+@media screen and (max-width: 1187px) {
+    div.NSCarrossel {
+        margin-left: 140px;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+    div.NSCarrossel {
+        margin-left: 200px;
+    }
+
+    div.NSCards {
+        height: 300px;
+        width: 200px;
+    }
+
+    .NStxt1 {
+        font-size: 13px;
+    }
+
+    .NStxt2 {
+        font-size: 10px;
+    }
+
+    .NStxt3 {
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 1014px) {
+    div.NSCarrossel {
+        margin-left: 140px;
+    }
+
+}
+
+@media screen and (max-width: 845px) {
+    div.NSCarrossel {
+        margin-left: 80px;
+    }
+
+}
+
+@media screen and (max-width: 802px) {
+    div.NSCarrossel {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    div.NSCarrossel {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 734px) {
+    div.NSCarrossel {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 707px) {
+    #servicos {
+        height: 1400px;
+    }
+    div.NSCarrossel {
+        flex-direction: column;
+        margin-left: 190px;
+    }
+
+    div.NSCards {
+        height: 360px;
+        width: 275px;
+    }
+
+    .NStxt1 {
+        font-size: 16px;
+    }
+
+    .NStxt2 {
+        font-size: 14px;
+    }
+
+    .NStxt3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 494px) {
+    div.NSCarrossel {
+        flex-direction: column;
+        margin-left: 100px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    div.NSCarrossel {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .DivServ {
+        padding-left: 50px;
+    }
+
+    .SBotao {
+        margin-right: 50px;
+
+    } 
+
+}
+
+
