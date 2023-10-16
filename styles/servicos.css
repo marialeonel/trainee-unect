@@ -73,18 +73,40 @@
     font-size: 16px;
 }
 
-.NStxt2 {
+.NStxt2-browser {
     color:var(--amarelo);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1.4px;
-    margin: 0 15px;
+    margin: 20px 80px;
     text-decoration: underline;
 }
 
-.NStxt3 {
+.NStxt2-hdd {
+    color:var(--amarelo);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    margin: 0px 73px;
+    text-decoration: underline;
+}
+
+.NStxt2-mobile {
+    color:var(--amarelo);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    margin: 33px 70px;
+    text-decoration: underline;
+}
+
+.NStxt3-browser {
     color: var(--unect-branco, #F2F3F4);
     text-align: center;
     font-family: Ubuntu;
@@ -93,10 +115,68 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.7px;
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 5px;
+    margin-top: 30px;
+    margin-left: 10px;
     position:static;
+}
+
+.NStxt3-hdd {
+    color: var(--unect-branco, #F2F3F4);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    margin-top: 40px;
+    margin-left: 10px;
+    position:static;
+}
+
+.NStxt3-mobile {
+    color: var(--unect-branco, #F2F3F4);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    margin-top: 40px;
+    margin-left: 10px;
+    position:static;
+}
+
+svg#line-1 {
+    float: right;
+    margin-top: 30px;
+}
+
+svg#line-2 {
+    float: left;
+    position: relative;
+    bottom: 7%;
+}
+
+svg#line-3 {
+    float: right;
+    margin-top: 14px;
+}
+
+svg#line-4 {
+    float: left;
+}
+
+svg#line-5 {
+    float: right;
+    margin-top: 30px;
+}
+
+svg#line-6 {
+    float: left;
+    position: relative;
+    bottom: 9.5%;
 }
 
 .PontoCard {
@@ -147,14 +227,42 @@
         font-size: 13px;
     }
 
-    .NStxt2 {
+    .NStxt2-browser, .NStxt2-hdd, .NStxt2-mobile {
         font-size: 10px;
     }
 
-    .NStxt3 {
-        font-size: 11px;
+    .NStxt2-browser {
+        margin: 25px 40px;
     }
 
+    .NStxt2-hdd {
+        margin: 0 40px;
+    }
+
+    .NStxt2-mobile {
+        margin: 20px 10px;
+    }
+
+    svg#line-1, svg#line-2, svg#line-3, svg#line-4, svg#line-5, svg#line-6  {
+        display: none;
+    }
+
+    .NStxt3-browser, .NStxt3-hdd, .NStxt3-mobile {
+        font-size: 11px;
+
+    }
+
+    .NStxt3-browser {
+        margin-top: 5px;
+    }
+
+    .NStxt3-hdd {
+        margin-top: 20px
+    }
+
+    .NStxt3-mobile {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 1014px) {
@@ -162,6 +270,46 @@
         margin-left: 140px;
     }
 
+    .NStxt2-browser {
+        font-size: 14px;
+        margin: 20px 80px;
+    }
+    
+    .NStxt2-hdd {
+        font-size: 14px;
+        margin: 0px 73px;
+ 
+    }
+    
+    .NStxt2-mobile {
+        font-size: 14px;
+        margin: 33px 70px;
+    }
+    
+    .NStxt3-browser {
+        font-size: 14px;
+        margin-top: 30px;
+        margin-left: 10px;
+        position:static;
+    }
+    
+    .NStxt3-hdd {
+        font-size: 14px;
+        margin-top: 40px;
+        margin-left: 10px;
+        position:static;
+    }
+    
+    .NStxt3-mobile {
+        font-size: 14px;
+        margin-top: 40px;
+        margin-left: 10px;
+        position:static;
+    }
+    
+    svg#line-1, svg#line-2, svg#line-3, svg#line-4, svg#line-5, svg#line-6  {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 845px) {
@@ -225,7 +373,6 @@
 }
 
 @media screen and (max-width: 420px) {
-
     div.NSCarrossel {
         flex-direction: column;
         margin-left: 30px;

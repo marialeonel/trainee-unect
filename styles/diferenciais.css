@@ -1,0 +1,72 @@
+:root {
+    --quase_preto: #000205;
+    --azul_escuro: #1F64C5;
+    --azul_claro: #226ED8;
+    --amarelo: #CFDD19;
+    --cinza_claro: #F2F3F4;
+}
+
+#diferenciais {
+    background-image: url(../Fotos/fundo-dif.png);
+    margin: 0px;
+}
+
+p.titulo {
+    color: rgba(207, 221, 25, 0.85);
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+p.subtitulo {
+    color: var(--unect-branco, #F2F3F4);
+    font-family: Nunito;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+div.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+
+}
+div.card {
+    width: 330px;
+    height: 340px;
+    padding-top: 75px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
+    background: #4d4d4d;
+    align-items: center; 
+    text-align: center;
+    
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+div.card > h1 {
+    color: white;
+}
+
+div.card> hr {
+    border: 2px solid var(--amarelo);
+}
+
+div.card > p {
+    color: #f2f2f2;
+    font-family: Ubuntu;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 20px 15px 0 15px;
+}
+
+

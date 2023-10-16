@@ -2,7 +2,6 @@
 
 #portifolios {
     background-image: url(../Fotos/fundo-branco-1.png);
-    height: 100vh;
 }
 
 div.container-portfolios {
@@ -33,8 +32,8 @@ p.subtitulo {
 
 #imagem-artus, #imagem-cesep, #imagem-ecotech, #imagem-select, #imagem-bricks, #imagem-inception, #imagem-cotton, #imagem-zampro, #imagem-ecae, #imagem-paraiso, #imagem-titanus, #imagem-cocriagro {
     transition: transform 0.3s;
-    margin: auto; /* Centraliza o conteúdo verticalmente */
-    margin-left: 80px; /* Adicione margem à esquerda (espaço entre elementos) */
+    margin: auto;
+    margin-left: 80px; 
     margin-right: 5px;
 
 
@@ -59,7 +58,7 @@ p.subtitulo {
     }
 
     #imagem-artus, #imagem-cesep, #imagem-ecotech, #imagem-select, #imagem-bricks, #imagem-inception, #imagem-cotton, #imagem-zampro, #imagem-ecae, #imagem-paraiso, #imagem-titanus, #imagem-cocriagro {
-        margin-left: 0px; /* Adicione margem à esquerda (espaço entre elementos) */
+        margin-left: 0px; 
     }
 
     #imagem-artus img, #imagem-cesep img, #imagem-ecotech img, #imagem-select img, #imagem-bricks img, #imagem-inception img, #imagem-cotton img, #imagem-zampro img, #imagem-ecae img, #imagem-paraiso img, #imagem-titanus img, #imagem-cocriagro img {
