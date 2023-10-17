@@ -1,0 +1,18 @@
+#conteudos {
+    background-image: url('../Fotos/fundo_textura.png');
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    padding-top: 50px;
+
+    width: auto;
+    height: 500px;
+    position: relative;
+}
+
+.DivConteudos {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
