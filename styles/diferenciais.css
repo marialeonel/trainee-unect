@@ -11,8 +11,24 @@
     margin: 0px;
 }
 
+#diferenciais > div#borda {
+    position: relative;
+} 
+
+#diferenciais > div#borda > img#direita {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#diferenciais > div#borda > img#esquerda {
+    position: absolute;
+    margin-top: 215px;
+    left: 0;
+}
+
 p.titulo {
-    color: rgba(207, 221, 25, 0.85);
+    color: var(--amarelo);
     font-family: Ubuntu;
     font-size: 24px;
     font-style: normal;

@@ -1,3 +1,11 @@
+:root {
+    --quase_preto: #000205;
+    --azul_escuro: #1F64C5;
+    --azul_claro: #226ED8;
+    --amarelo: #CFDD19;
+    --cinza_claro: #F2F3F4;
+}
+
 #conteudos {
     background-image: url('../Fotos/fundo_textura.png');
     align-items: left;
@@ -5,8 +13,6 @@
     flex-direction: column;
     background-size: cover;
     padding-top: 50px;
-
-    width: auto;
     height: 500px;
     position: relative;
 }
@@ -16,3 +22,101 @@
     align-items: center;
     padding-left: 100px;
 }
+
+div > p.CStitulo {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #F2F3F4CC;
+}
+
+div > p.Csubtitulo {
+    font-family: 'Nunito';
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+div > p.Csubtitulo > span.CtxtDif1 {
+    color: var(--amarelo);
+}
+
+div > p.Ctxt1 {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-style: normal;
+}
+
+div > p.Ctxt1 > span.CtxtDif2 {
+    color: var(--amarelo);
+    letter-spacing: 1.2px;
+    margin-top: 52px;
+}
+
+div.DivConteudos > div > a > button#primeiro, button#segundo {
+    background-color: #5C9DF6;
+    width: 443px;
+    height: 81px;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    margin-top: 50px;
+    border: 0;
+    color: white;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+div.DivConteudos > div > a > button#primeiro:hover {
+    background-color: var(--amarelo);
+    box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.50);
+    color: rgba(37, 13, 13, 0.644);
+    transform: scale(1.1);
+
+}
+
+div > a button#segundo {
+    display: none;
+}
+
+div > img#ebook {
+    height: 400px;
+    margin-left: 300px;
+}
+
+div > img#ebook:hover {
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+    #conteudos {
+        height: 900px;
+    }
+    .DivConteudos {
+        flex-direction: column;
+    }
+
+    div > img#ebook {
+        margin-left: -100px;
+    }
+
+}
+
+@media screen and (min-width: 1140px) and (max-width: 1220px) {
+    div > img#ebook {
+        margin-left: -100px;
+    }
+}
+
+@media screen and (min-width: 1220px) and (max-width: 1521px) {
+    div > img#ebook {
+        margin-left: 50px;
+    }
+}
+
