@@ -72,7 +72,7 @@ div.DivConteudos > div > a > button#primeiro, button#segundo {
     font-size: 24px;
 }
 
-div.DivConteudos > div > a > button#primeiro:hover {
+div.DivConteudos > div > a > button#primeiro:hover, div > a > button#segundo:hover {
     background-color: var(--amarelo);
     box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.50);
     color: rgba(37, 13, 13, 0.644);
@@ -80,7 +80,7 @@ div.DivConteudos > div > a > button#primeiro:hover {
 
 }
 
-div > a button#segundo {
+div > a > button#segundo {
     display: none;
 }
 
@@ -94,6 +94,29 @@ div > img#ebook:hover {
     transition: transform 0.3s ease-in-out;
 }
 
+/* @media screen and (min-width: 345px) and (max-width: 768px) {
+    #conteudos {
+        height: 900px;
+    }
+
+    div > img#ebook {
+        margin-left: -200px;
+        margin-top: 600px;
+    }
+
+    div.DivConteudos > div > a > button#primeiro {
+        display: none;
+    }
+
+
+    div > a button#segundo {
+        display: block;
+        margin-right: 90px;
+    }
+
+
+} */
+
 @media screen and (min-width: 768px) and (max-width: 1140px) {
     #conteudos {
         height: 900px;
@@ -105,6 +128,18 @@ div > img#ebook:hover {
     div > img#ebook {
         margin-left: -100px;
     }
+
+    div.DivConteudos > div > a > button#primeiro {
+        display: none;
+    }
+
+
+    div > a button#segundo {
+        display: block;
+        margin-right: 90px;
+    }
+
+
 
 }
 
