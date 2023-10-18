@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
 #portifolios {
     background-image: url(../Fotos/fundo-branco-1.png);
@@ -87,4 +87,271 @@ p.subtitulo {
 }
 
 
+ */
 
+ #portifolios{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../src/fundo-portifolio.png");
+    background-size: cover;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: auto;
+    height: 1082px;
+    position: relative;
+}
+
+.portifolio-wraper{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.portifolio-wraper::-webkit-scrollbar {
+    display: none;
+}
+  
+  
+.portifolio-wraper {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+} 
+
+
+.containerPortifilios{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 41px;
+    column-gap: 60px;
+    height: 1060px;
+    
+    position: relative;
+}
+
+.portifolio{
+    width: 540px;
+    height: 405px;
+    border-radius: 20px;
+    padding-bottom: 100px;
+    background-size: cover;
+    color: #F2F3F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transition: transform 0.5s;
+    transform: translateY(0px);
+}
+
+.portifolio:nth-child(1){
+    background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/portfolio-artus-1.png);
+}
+.portifolio:nth-child(2){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-cesep.png);
+    
+}
+.portifolio:nth-child(3){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-E-COTECH.png);
+
+}
+.portifolio:nth-child(4){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-SELECT.png);
+}
+.portifolio:nth-child(5){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-BRICK.png);
+}
+.portifolio:nth-child(6){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-INCEPTION3D.png);
+}
+.portifolio:nth-child(7){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-COTTONCONSULTORIA.png);
+}
+.portifolio:nth-child(8){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-ZAMPRO.png);
+}
+.portifolio:nth-child(9){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-ECAE-UEL.png);
+}
+.portifolio:nth-child(10){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-PARAÍSODASCAMAS.png);
+}
+.portifolio:nth-child(11){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-TITANUS.png);
+}
+.portifolio:nth-child(12){
+    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-COCRIAGRO.png);
+}
+
+
+
+.portifolio:nth-child(1):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../src/portfolio-artus.png);
+}
+.portifolio:nth-child(2):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../src/portfolio-cesep.png);
+    transition: 0.6s ease;
+}
+.portifolio:nth-child(3):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-E-COTECH.png);
+
+}
+.portifolio:nth-child(4):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-SELECT.png);
+}
+.portifolio:nth-child(5):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-BRICK.png);
+}
+.portifolio:nth-child(6):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-INCEPTION3D.png);
+}
+.portifolio:nth-child(7):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-COTTONCONSULTORIA.png);
+}
+.portifolio:nth-child(8):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-ZAMPRO.png);
+}
+.portifolio:nth-child(9):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-ECAE-UEL.png);
+}
+.portifolio:nth-child(10):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../src/portfolio-PARAÍSODASCAMAS.png);
+}
+.portifolio:nth-child(11):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../src/portfolio-TITANUS.png);
+}
+.portifolio:nth-child(12):hover{
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../src/portfolio-COCRIAGRO.png);
+}
+
+.portifolio:hover{
+    transform: translateY(-20px);
+    
+}
+
+.portifolio h3{
+    font-family: ubuntu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.portifolio p{
+    font-family: ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: rgba(242, 243, 244, 0.70);
+}
+
+.button-mostrarMais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgba(17, 17, 17, 0.30) 0%, rgba(13, 13, 13, 0.00) 100%);
+    width: 100vw;
+    height: 273px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bt-expandir{
+    background-image: url(../src/bt-expandir-portfolio.svg);
+    width: 150px;
+    height: 150px;
+    transition-duration: 0.5s;
+}
+
+.bt-expandir:hover{
+    background-image: url(../src/bt-expandir-portifolio-hover.svg);
+    transition-duration: 0.5s;
+}
+
+#portifolios.active {
+    height: auto;
+    padding-bottom: 150px;
+}
+
+#portifolios.active .containerPortifilios{
+    height: auto;
+    padding-bottom: 150px;
+}
+
+#portifolios.active .bt-expandir{
+    transform: rotatex(180deg);
+}
+
+#portifolios.active .button-mostrarMais{
+    height: 150px;
+}
+
+@media (max-width: 1440px){
+    .portifolio{
+      width: 300px;
+      height: 250px;
+    }
+}
+
+@media (max-width: 960px){
+
+    #portifolios{
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    #portifolios.active{
+        padding-bottom: 50px;
+    }
+
+    #portifolios.active .containerPortifilios{
+        padding-bottom: 0;
+    }
+
+    .portifolio-wraper{
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    .containerPortifilios{
+        flex-flow: row nowrap;
+        height: auto;
+        padding-right: 25px;
+    }
+    .button-mostrarMais{
+      display: none;
+    }
+}
+
+@media (max-width: 660px){
+
+    #portifolios{
+        height: auto;
+        padding-top: 25px;
+        padding-left: 50px;
+        padding-right: 0;
+
+    }
+
+    #portifolios p.subtitulo{
+        padding-bottom: 25px;
+    }
+
+    .portifolio-wraper{
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    .containerPortifilios{
+        flex-flow: row nowrap;
+        height: auto;
+        padding-right: 25px;
+    }
+    .button-mostrarMais{
+      display: none;
+    }
+}
