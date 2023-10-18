@@ -94,14 +94,18 @@ div > img#ebook:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-/* @media screen and (min-width: 345px) and (max-width: 768px) {
+@media screen and (min-width: 345px) and (max-width: 768px) {
     #conteudos {
-        height: 900px;
+        height: 700px;
+    }
+    .DivConteudos {
+        flex-direction: column;
+        padding-left: 50px;
     }
 
     div > img#ebook {
-        margin-left: -200px;
-        margin-top: 600px;
+        height: 200px;
+        margin-left: -100px;
     }
 
     div.DivConteudos > div > a > button#primeiro {
@@ -112,10 +116,35 @@ div > img#ebook:hover {
     div > a button#segundo {
         display: block;
         margin-right: 90px;
+        width: 237px;
+        height: 47px;
+        font-size: 14px;
+
+    }
+
+    div > p.CStitulo {
+        font-size: 24px;
+    }
+
+    div > p.Csubtitulo {
+        font-size: 35px;
     }
 
 
-} */
+    div > p.Ctxt1 {
+        font-size: 20px;
+    }
+
+    div > p.Ctxt1 > span.CtxtDif2 {
+        color: var(--unect-branco, #F2F3F4);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.12px;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1140px) {
     #conteudos {
@@ -139,8 +168,6 @@ div > img#ebook:hover {
         margin-right: 90px;
     }
 
-
-
 }
 
 @media screen and (min-width: 1140px) and (max-width: 1220px) {
@@ -149,9 +176,23 @@ div > img#ebook:hover {
     }
 }
 
-@media screen and (min-width: 1220px) and (max-width: 1521px) {
-    div > img#ebook {
-        margin-left: 50px;
+@media screen and (min-width: 1544px) and (max-width: 1980px) {
+
+    .DivConteudos {
+        padding-left: 420px;
     }
 }
+
+@media screen and (min-width: 1980px) {
+    .DivConteudos {
+        padding-left: 420px;
+    }
+
+    div > img#ebook {
+        margin-left: 750px;
+    }
+}
+
+
+
 

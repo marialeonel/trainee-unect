@@ -36,8 +36,9 @@
 
 .NSCarrossel {
     display: flex;
-    margin-left: 300px;
-    column-gap: 30px;
+    gap: 24px;
+    justify-content: center;
+    flex-direction: row;
     
 }
 .NSsubtitulo {
@@ -60,7 +61,6 @@
     border-radius: 20px;
     text-align: center;
     color: white;
-    
 }
 
 .icone-browser {
@@ -146,37 +146,6 @@
     margin-top: 40px;
     margin-left: 10px;
     position:static;
-}
-
-svg#line-1 {
-    float: right;
-    margin-top: 30px;
-}
-
-svg#line-2 {
-    float: left;
-    position: relative;
-    bottom: 7%;
-}
-
-svg#line-3 {
-    float: right;
-    margin-top: 14px;
-}
-
-svg#line-4 {
-    float: left;
-}
-
-svg#line-5 {
-    float: right;
-    margin-top: 30px;
-}
-
-svg#line-6 {
-    float: left;
-    position: relative;
-    bottom: 9.5%;
 }
 
 .PontoCard {
