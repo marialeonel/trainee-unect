@@ -23,11 +23,14 @@
 
 #diferenciais > div#borda > img#esquerda {
     position: absolute;
-    margin-top: 215px;
+    margin-top: 226px;
     left: 0;
 }
 
 p.titulo {
+    padding-top: 30px;
+    padding-left: 100px;
+    margin: 0;
     color: var(--amarelo);
     font-family: Ubuntu;
     font-size: 24px;
@@ -38,6 +41,8 @@ p.titulo {
 }
 
 p.subtitulo {
+    margin-bottom: 60px;
+    padding-left: 100px;
     color: var(--unect-branco, #F2F3F4);
     font-family: Nunito;
     font-size: 35px;

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+:root {
+    --quase_preto: #000205;
+    --azul_escuro: #1F64C5;
+    --azul_claro: #226ED8;
+    --amarelo: #CFDD19;
+    --cinza_claro: #F2F3F4;
+}
+
+#contatos {
+    background-color: #333;
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+:root {
+    --quase_preto: #000205;
+    --azul_escuro: #1F64C5;
+    --azul_claro: #226ED8;
+    --amarelo: #CFDD19;
+    --cinza_claro: #F2F3F4;
+}
+
+#sobre-nos {
+    background-image: linear-gradient(#000205ea, #111111ee), url(/Fotos/time_foto.png);
+    background-color: rgba(0, 0, 0, 0.9); 
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    width: auto;
+}
+
+div.DIVsobre {
+    display: flex;
+}
+
+div.DIVsobre > div.TextSOBRE {
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+div.DIVsobre > div.TextSOBRE > p.SNtitulo {
+    font-family: ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    color: #F2F3F4CC;
+    position: relative;
+}
+
+div.DIVsobre > div.TextSOBRE > p.SNsubtitulo {
+    font-family: Nunito;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+    position: relative;
+    
+}
+
+div.DIVsobre > div.TextSOBRE > p.SNtxt1{
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    color: #DCDCDC;
+    padding-bottom: 58px;
+    position: relative;
+    
+}
+
+div#SNcarousel-container {
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 20px;
+    /* margin-left: 200px; */
+    right: 0;
+    margin-right: 50px;
+    margin-top: 120px;
+    
+}
+div#SNcarousel-container > span.SNcarouselTextUnderline > p.SNcarouselText{
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    margin-left: 310px;
+    margin-bottom: 20px;
+  
+}
+
+div#SNcarousel-container > span.SNcarouselTextUnderline{
+    text-decoration: underline;
+    color: #E0EB4F;
+    text-underline-offset: 8px; 
+} 
+
+  #SNcarousel {
+    width: 300%;
+    height: 406.25px;
+    display: flex;
+}
+  
+  .SNcarousel-item {
+    flex: 0 0 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+  
+}
+
+.SNtxt2{
+    display: none;
+}
+
+@media screen and (max-width: 1060px) {
+    
+}
+
+
+
+

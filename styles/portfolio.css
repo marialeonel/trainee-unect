@@ -1,98 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
-#portifolios {
-    background-image: url(../Fotos/fundo-branco-1.png);
+:root {
+    --quase_preto: #000205;
+    --azul_escuro: #1F64C5;
+    --azul_claro: #226ED8;
+    --amarelo: #CFDD19;
+    --cinza_claro: #F2F3F4;
 }
-
-div.container-portfolios {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 10px; 
-}
-
-p.titulo {
-    font-family: ubuntu;
-    font-size: 24px;
-    font-weight: 500;
-    color: rgba(31, 100, 197, 0.90);
-    padding-bottom: 10px;
-    margin: 0px 0px 0px 200px;
-    padding-top: 50px;
-}
-
-p.subtitulo {
-    font-family: Nunito;
-    font-size: 35px;
-    font-weight: 700;
-    color: #1F64C5;
-    padding-bottom: 58px;
-    position: relative;
-    margin: 0px 0px 0px 200px;
-}
-
-#imagem-artus, #imagem-cesep, #imagem-ecotech, #imagem-select, #imagem-bricks, #imagem-inception, #imagem-cotton, #imagem-zampro, #imagem-ecae, #imagem-paraiso, #imagem-titanus, #imagem-cocriagro {
-    transition: transform 0.3s;
-    margin: auto;
-    margin-left: 80px; 
-    margin-right: 5px;
-
-
-}
-#imagem-artus:hover, #imagem-cesep:hover, #imagem-ecotech:hover, #imagem-select:hover, #imagem-bricks:hover, #imagem-inception:hover, #imagem-cotton:hover, #imagem-zampro:hover, #imagem-ecae:hover, #imagem-paraiso:hover, #imagem-titanus:hover, #imagem-cocriagro:hover {
-    filter: brightness(0.5);
-    transform: translateY(-20px);
-
-}
-
-@media screen and (max-width: 1448px) {
-    div.container-portfolios {
-        grid-template-columns: repeat(1, 1fr); 
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1414px) {
-    div.container-portfolios {
-        grid-template-columns: repeat(3, 1fr); 
-        text-align: center;
-    }
-
-    #imagem-artus, #imagem-cesep, #imagem-ecotech, #imagem-select, #imagem-bricks, #imagem-inception, #imagem-cotton, #imagem-zampro, #imagem-ecae, #imagem-paraiso, #imagem-titanus, #imagem-cocriagro {
-        margin-left: 0px; 
-    }
-
-    #imagem-artus img, #imagem-cesep img, #imagem-ecotech img, #imagem-select img, #imagem-bricks img, #imagem-inception img, #imagem-cotton img, #imagem-zampro img, #imagem-ecae img, #imagem-paraiso img, #imagem-titanus img, #imagem-cocriagro img {
-        max-width: 300px;
-    }
-}
-
-@media screen and (max-width: 949px) {
-    div.container-portfolios {
-        grid-template-columns: repeat(2, 1fr); 
-        text-align: center;
-    }
-
-}
-
-@media screen and (max-width: 618px) {
-    p.titulo, p.subtitulo {
-        margin: 40px;
-    } 
-
-    div.container-portfolios {
-        grid-template-columns: repeat(1, 1fr); 
-        text-align: center;
-    }
-
-}
-
-
- */
 
  #portifolios{
     display: flex;
     flex-direction: column;
-    background-image: url("../src/fundo-portifolio.png");
+    background-image: url("../Fotos/fundo-branco-1.png");
     background-size: cover;
     padding-top: 50px;
     padding-left: 150px;
@@ -134,7 +53,7 @@ p.subtitulo {
 
 .portifolio{
     width: 540px;
-    height: 405px;
+    height: 305px;
     border-radius: 20px;
     padding-bottom: 100px;
     background-size: cover;
@@ -148,83 +67,60 @@ p.subtitulo {
 }
 
 .portifolio:nth-child(1){
-    background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/portfolio-artus-1.png);
+    background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/portfolio\ -\ artus.png);
 }
 .portifolio:nth-child(2){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-cesep.png);
+    background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/portfolio\ -\ cesep.png);
     
 }
 .portifolio:nth-child(3){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-E-COTECH.png);
+    background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/portfolio-ecotech-1.png);
 
 }
 .portifolio:nth-child(4){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-SELECT.png);
+    background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/portfolio\ -\ select.png);
 }
 .portifolio:nth-child(5){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-BRICK.png);
+    background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/portfolio\ -\ brick.png);
 }
 .portifolio:nth-child(6){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-INCEPTION3D.png);
+    background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/inception3d-portfolio.png);
 }
 .portifolio:nth-child(7){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-COTTONCONSULTORIA.png);
+    background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/cotton-portfolio.png);
 }
 .portifolio:nth-child(8){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-ZAMPRO.png);
+    background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/zampro-portfolio.png);
 }
-.portifolio:nth-child(9){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-ECAE-UEL.png);
-}
-.portifolio:nth-child(10){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-PARAÍSODASCAMAS.png);
-}
-.portifolio:nth-child(11){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-TITANUS.png);
-}
-.portifolio:nth-child(12){
-    background-image: linear-gradient(#000205B2, #11111180), url(../src/portfolio-COCRIAGRO.png);
-}
+
 
 
 
 .portifolio:nth-child(1):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../src/portfolio-artus.png);
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../Fotos/portfolio/portfolio\ -\ artus.png);
 }
 .portifolio:nth-child(2):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../src/portfolio-cesep.png);
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../Fotos/portfolio/portfolio\ -\ cesep.png);
     transition: 0.6s ease;
 }
 .portifolio:nth-child(3):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-E-COTECH.png);
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../Fotos/portfolio/portfolio-ecotech-1.png);
 
 }
 .portifolio:nth-child(4):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-SELECT.png);
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../Fotos/portfolio/portfolio\ -\ select.png);
 }
 .portifolio:nth-child(5):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-BRICK.png);
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../Fotos/portfolio/portfolio\ -\ brick.png);
 }
 .portifolio:nth-child(6):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-INCEPTION3D.png);
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../Fotos/portfolio/inception3d-portfolio.png);
 }
 .portifolio:nth-child(7):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-COTTONCONSULTORIA.png);
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../Fotos/portfolio/cotton-portfolio.png);
 }
 .portifolio:nth-child(8):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-ZAMPRO.png);
-}
-.portifolio:nth-child(9):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../src/portfolio-ECAE-UEL.png);
-}
-.portifolio:nth-child(10):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../src/portfolio-PARAÍSODASCAMAS.png);
-}
-.portifolio:nth-child(11):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../src/portfolio-TITANUS.png);
-}
-.portifolio:nth-child(12):hover{
-    background-image: linear-gradient(rgba(0, 2, 5, 0.80), rgba(0, 2, 5, 0.80)), url(../src/portfolio-COCRIAGRO.png);
+    background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../Fotos/portfolio/zampro-portfolio.png);
 }
 
 .portifolio:hover{
@@ -261,14 +157,16 @@ p.subtitulo {
 }
 
 .bt-expandir{
-    background-image: url(../src/bt-expandir-portfolio.svg);
+    background-image: url(https://unect.com.br/src/bt-expandir-portfolio.svg);
     width: 150px;
     height: 150px;
     transition-duration: 0.5s;
+    background-color: transparent;
+    border: 0;
 }
 
 .bt-expandir:hover{
-    background-image: url(../src/bt-expandir-portifolio-hover.svg);
+    background-image: url();
     transition-duration: 0.5s;
 }
 
@@ -290,14 +188,14 @@ p.subtitulo {
     height: 150px;
 }
 
-@media (max-width: 1440px){
+@media screen and (max-width: 1440px){
     .portifolio{
       width: 300px;
       height: 250px;
     }
 }
 
-@media (max-width: 960px){
+@media screen and (max-width: 960px){
 
     #portifolios{
         height: auto;
@@ -327,7 +225,7 @@ p.subtitulo {
     }
 }
 
-@media (max-width: 660px){
+@media screen and (max-width: 660px){
 
     #portifolios{
         height: auto;
