@@ -27,6 +27,7 @@
     overflow: hidden;
 }
 
+/*esconde a scroll bar*/
 .portifolio-wraper::-webkit-scrollbar {
     display: none;
 }

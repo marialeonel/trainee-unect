@@ -40,8 +40,15 @@
     flex-direction: row;
     overflow: hidden;
     /* justify-content: flex-end; */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
     
 }
+
+.NSCarrossel::-webkit-scrollbar {
+    display: none;
+}
+
 .NSsubtitulo {
     color: #FFF;
     font-family: Ubuntu;
@@ -188,10 +195,14 @@
         overflow-x: auto;
     }
 
-    .NSCards {
+    /* .wrapper {
         flex-flow: row nowrap;
         height: auto;
         padding-right: 25px;
+    } */
+
+    .NSCards {
+        
     }
 
     #servicos{
