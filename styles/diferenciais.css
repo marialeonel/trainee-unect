@@ -27,7 +27,7 @@
     left: 0;
 }
 
-p.titulo {
+section#diferenciais > p.titulo {
     padding-top: 30px;
     padding-left: 100px;
     margin: 0;
@@ -40,7 +40,7 @@ p.titulo {
     letter-spacing: 1.2px;
 }
 
-p.subtitulo {
+section#diferenciais > p.subtitulo {
     margin-bottom: 60px;
     padding-left: 100px;
     color: var(--unect-branco, #F2F3F4);
@@ -52,13 +52,45 @@ p.subtitulo {
     letter-spacing: 2px;
 }
 
-div.main {
+.card-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    z-index: 1;
+  }
+  
+.main {
+    align-self: center;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    row-gap: 20px;
+    column-gap: 45px;
+    flex-flow: row nowrap;
+    padding-bottom: 10px;
+}
+
+.card-wraper::-webkit-scrollbar {
+    display: none;
+}
+
+
+.card-wraper {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+} 
+  
+/* div.main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 40px;
 
-}
+} */
 div.card {
     width: 330px;
     height: 340px;
@@ -89,5 +121,104 @@ div.card > p {
     letter-spacing: 1px;
     margin: 20px 15px 0 15px;
 }
+
+@media (max-width: 660px){
+
+    #diferenciais{
+      padding-left: 50px;
+      padding-right: 0;
+    }
+  
+    #diferenciais p.subtitulo{
+      width: 207px;
+    }
+  
+    #diferenciais p.subtitulo::before{
+      top: 45px;
+  
+    }
+    
+    #diferenciais::after{
+      width: 200px;
+      height: 200px;
+    }
+  
+    #diferenciais::before{
+      width: 200px;
+      height: 200px;
+    }
+  
+    .card{
+      width: 275px;
+      height: 400px;
+    }
+  
+    .main{
+      column-gap: 18px;
+      padding-right: 30px;
+    }
+  
+    .card h1 {
+    word-spacing: normal;
+    font-size: 18px;
+    }
+  
+    .card i {
+      top: -20px;
+  
+      background-color: #cfdd19;
+    }
+  
+    .card:nth-child(1) i {
+      width: 63px;
+      height: 54px;
+    }
+  
+    .card:nth-child(2) i {
+      width: 63px;
+      height: 60px;
+    }
+  
+    .card:nth-child(3) i {
+      width: 60px;
+      height: 52px;
+    }
+  
+    .card p {
+      opacity: 1;
+    }
+  
+    .card h1 {
+      opacity: 0;
+      top: -15px;
+    }
+  
+    .card .h1_onhover {
+      opacity: 1;
+      top: -15px;
+    }
+  
+    .card div::before {
+      width: 30%;
+  
+      background-color: #cfdd19;
+  
+      left: 50%;
+      transform: translateX(-99%);
+  
+      border-radius: 10px 0 0 10px;
+    }
+  
+    .card div::after {
+      width: 30%;
+  
+      background-color: #cfdd19;
+  
+      right: 50%;
+      transform: translateX(99%);
+  
+      border-radius: 0 10px 10px 0;
+    }
+  }
 
 
