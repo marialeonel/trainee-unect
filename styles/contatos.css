@@ -57,6 +57,11 @@ p.dados-contato {
     flex-direction: column;
 }
 
+div.redes-sociais {
+    display: flex;
+    flex-direction: column;
+}
+
 .bt-redes-sociais {
     display: flex;
     align-items: center;
@@ -155,7 +160,7 @@ div.form-group-texto > textarea {
     border: none;
     color: rgba(31, 100, 197, 0.50);
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     word-wrap: break-word;
     letter-spacing: 1px;
@@ -173,11 +178,13 @@ div.form-group-checkBox {
 }
 
 button#Botao-enviar {
+    font-family: Ubuntu;
     display: flex;
     align-self: flex-end;
     margin-top: 30px;
+    margin-left: 90px;
     padding: 20px 15px;
-    background-color: #1F64C5;
+    background-color: var(--azul_claro);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     gap: 13px;
@@ -186,7 +193,35 @@ button#Botao-enviar {
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 1.2px;
+    border: 0;
 }
+
+
+@media screen and (max-width: 1020px) {
+    #contatos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.redes-sociais {
+        flex-direction: row;
+        gap: 17px;
+        margin-right: 50px;
+    }
+
+    div.forms {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    div.redes-sociais, div.forms {
+        
+    }
+}
+
+
+
 
 
 
