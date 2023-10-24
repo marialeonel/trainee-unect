@@ -13,7 +13,7 @@
     background-color: rgba(0, 0, 0, 0.9); 
     align-items: left;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-size: cover;
     width: auto;
 }
@@ -63,7 +63,7 @@ div#SNcarousel-container {
     overflow: hidden;
     position: absolute;
     border-radius: 20px;
-    /* margin-left: 200px; */
+    margin-left: 200px;
     right: 0;
     margin-right: 50px;
     margin-top: 120px;
@@ -88,13 +88,13 @@ div#SNcarousel-container > span.SNcarouselTextUnderline{
     text-underline-offset: 8px; 
 } 
 
-  #SNcarousel {
+#SNcarousel {
     width: 300%;
     height: 406.25px;
     display: flex;
 }
   
-  .SNcarousel-item {
+.SNcarousel-item {
     flex: 0 0 33.33%;
     height: 100%;
     display: flex;
@@ -107,8 +107,144 @@ div#SNcarousel-container > span.SNcarouselTextUnderline{
     display: none;
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 768px) {
+    #sobre-nos{
+        height: 926px;
+        overflow: hidden;
+    }
+
+    div.DIVsobre{
+        margin-top: -50px;
+        padding-left: 50px;
+    }
+
+    div.DIVsobre > div.TextSOBRE > p.SNtitulo{
+        color: rgba(242, 243, 244, 0.80);
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.8px;
+    }
+
+    div.DIVsobre > div.TextSOBRE > p.SNsubtitulo {
+        position: absolute;
+        color: #FFF;
+        font-family: Nunito;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1px;
+    }
     
+    div.DIVsobre > div.TextSOBRE > p.SNtxt1{
+        display: none;
+    }
+    .SNtxt2{
+        position: absolute;
+        color: #DCDCDC;
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.6px;
+        margin-top: 70px;
+        display: flex;
+    }
+  
+    div#SNcarousel-container{
+        margin-top: 520px;
+        position: relative;
+        margin-left: -120px;
+    }
+    
+    #SNcarousel{
+        width: 300%;
+        height: 257px;
+  
+    }
+    div#SNcarousel-container > span.SNcarouselTextUnderline > p.SNcarouselText{
+        color: var(--unect-branco, #F2F3F4);
+        font-family: Ubuntu;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        margin-left: 290px;
+    }
+}
+  
+
+@media screen and (min-width: 769px) and (max-width: 1061px) {
+
+    #sobre-nos{
+        height: 726px;
+    }
+
+    div.DIVsobre{
+        margin-top: -50px;
+    }
+
+    div.DIVsobre > div.TextSOBRE > p.SNtitulo{
+        color: rgba(242, 243, 244, 0.80);
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.8px;
+      
+    }
+      div.DIVsobre > div.TextSOBRE > p.SNsubtitulo{
+        color: #FFF;
+        font-family: Nunito;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1px;
+    }
+
+    div.DIVsobre > div.TextSOBRE > p.SNtxt1{
+        color: #DCDCDC;
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.6px;
+        margin-top: 18px;
+    }
+
+    div#SNcarousel-container{
+        margin-top: 320px;
+    }
+
+    #SNcarousel{
+        width: 300%;
+        height: 257px;
+    }
+
+    .SNcarouselText{
+        color: var(--unect-branco, #F2F3F4);
+        font-family: Ubuntu;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        margin-left: 290px;
+    
+    }
+
+    div#SNcarousel-container > span.SNcarouselTextUnderline > p.SNcarouselText{
+        font-size: 20px;
+        margin-left: 240px;
+    }
 }
 
 
