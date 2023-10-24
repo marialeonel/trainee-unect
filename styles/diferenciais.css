@@ -27,7 +27,7 @@
     left: 0;
 }
 
-p.titulo {
+section#diferenciais > p.titulo {
     padding-top: 30px;
     padding-left: 100px;
     margin: 0;
@@ -40,7 +40,7 @@ p.titulo {
     letter-spacing: 1.2px;
 }
 
-p.subtitulo {
+section#diferenciais > p.subtitulo {
     margin-bottom: 60px;
     padding-left: 100px;
     color: var(--unect-branco, #F2F3F4);

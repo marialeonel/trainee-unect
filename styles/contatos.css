@@ -10,4 +10,188 @@
 
 #contatos {
     background-color: #333;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
 }
+div.informacoes-forms {
+    margin-left: 100px;
+}
+
+p.titulo {
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+p.subtitulo {
+    font-family: Nunito;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+}
+
+p.titulos-contato {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+p.dados-contato {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+    display: flex;
+    color: white;
+}
+
+.Formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.bt-redes-sociais {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 25px;
+    color: #CFDD19;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.bt-redes-sociais:hover {
+    color: #CFDD19;
+    text-decoration: underline;
+}
+
+div.forms {
+    background-color: white;
+    width: 55%;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 54px 100px 24px 50px;
+    margin: 50px;
+}
+
+#Titulo-formulario {
+    color: var(--unect-azul-corpo-texto, #233D62);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    width: 80%;
+    padding-bottom: 22px;
+}
+
+div.form-group {
+    width: 100%;
+    height: 25px;
+    padding: 20px;
+    border: 2.5px solid #1F64C5;
+    border-radius: 10px;
+    position: relative;
+    outline: none;
+    margin-bottom: 48px;
+
+}
+
+div.form-group > label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    padding: 0 10px;
+    background-color: white;
+    color: var(--unect-azul-1, #1F64C5);
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+div.form-group > input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: rgba(31, 100, 197, 0.50);
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+div.form-group-texto {
+    width: 100%;
+    height: 153px;
+    padding: 20px;
+    border: 2.5px solid #1F64C5;
+    border-radius: 10px;
+    position: relative;
+    outline: none;
+}
+
+div.form-group-texto > label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    padding: 0 10px;
+    background-color: #F2F2F2;
+    color: var(--unect-azul-1, #1F64C5);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+div.form-group-texto > textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: rgba(31, 100, 197, 0.50);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: normal;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+}
+
+div.form-group-checkBox {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 10px;
+    color: #5487D0;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+button#Botao-enviar {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 30px;
+    padding: 20px 15px;
+    background-color: #1F64C5;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    gap: 13px;
+    cursor: pointer;
+    color: #B6E9FA;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+
+
+
+
+
+
+
