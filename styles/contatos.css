@@ -79,7 +79,7 @@ div.redes-sociais {
 }
 
 div.forms {
-    background-color: white;
+    background-color: #F2F2F2;
     width: 55%;
     box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -113,7 +113,7 @@ div.form-group > label {
     top: -10px;
     left: 20px;
     padding: 0 10px;
-    background-color: white;
+    background-color: #F2F2F2;
     color: var(--unect-azul-1, #1F64C5);
     font-family: Ubuntu;
     font-size: 16px;
@@ -130,6 +130,7 @@ div.form-group > input {
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 1px;
+    background-color: #F2F2F2;
 }
 
 div.form-group-texto {
@@ -140,6 +141,7 @@ div.form-group-texto {
     border-radius: 10px;
     position: relative;
     outline: none;
+    
 }
 
 div.form-group-texto > label {
@@ -164,6 +166,7 @@ div.form-group-texto > textarea {
     line-height: normal;
     word-wrap: break-word;
     letter-spacing: 1px;
+    background-color: #F2F2F2;
 }
 
 div.form-group-checkBox {
@@ -196,6 +199,10 @@ button#Botao-enviar {
     border: 0;
 }
 
+button#Botao-enviar:hover {
+    background: #3297b9;
+}
+
 
 @media screen and (max-width: 1020px) {
     #contatos {
@@ -209,14 +216,44 @@ button#Botao-enviar {
         margin-right: 50px;
     }
 
-    div.forms {
-        margin-right: 50px;
-    }
 }
 
 @media screen and (max-width: 656px) {
-    div.redes-sociais, div.forms {
-        
+
+    div.informacoes-forms {
+        margin-left: 10px;
+    }
+
+    div.forms {
+        width: 45%;
+    }
+
+    p.titulos-contato{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    p.dados-contato{
+        font-size: 13px;
+        padding-bottom: 15px;
+    }
+
+    span.linhadivisoria > hr {
+        margin-bottom: 15px;
+        width: 70%;
+        margin-left: 30px;
+    }
+
+    p.subtitulo{
+        padding-bottom: 18px;
+    }
+
+    div.redes-sociais > a > img {
+        height: 25px;
+    }
+
+    div.redes-sociais > a > p {
+        font-size: 12px;
     }
 }
 
