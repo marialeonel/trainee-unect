@@ -146,42 +146,7 @@ div > img#ebook:hover {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1140px) {
-    #conteudos {
-        height: 900px;
-    }
-    .DivConteudos {
-        flex-direction: column;
-    }
 
-    div > img#ebook {
-        margin-left: -100px;
-    }
-
-    div.DivConteudos > div > a > button#primeiro {
-        display: none;
-    }
-
-
-    div > a button#segundo {
-        display: block;
-        margin-right: 90px;
-    }
-
-}
-
-@media screen and (min-width: 1140px) and (max-width: 1220px) {
-    div > img#ebook {
-        margin-left: -100px;
-    }
-}
-
-@media screen and (min-width: 1544px) and (max-width: 1980px) {
-
-    .DivConteudos {
-        padding-left: 420px;
-    }
-}
 
 @media screen and (min-width: 1980px) {
     .DivConteudos {
@@ -192,6 +157,46 @@ div > img#ebook:hover {
         margin-left: 750px;
     }
 }
+
+@media screen and (min-width: 1140px) and (max-width: 1220px) {
+    div > img#ebook {
+        margin-left: -100px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+    div > img#ebook {
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #conteudos {
+        height: 900px;
+    }
+    .DivConteudos {
+        flex-direction: column;
+    }
+
+    div > img#ebook {
+        margin-left: -100px;
+        height: 300px;
+    }
+
+    div.DivConteudos > div > a > button#primeiro {
+        display: none;
+    }
+
+    div > a button#segundo {
+        display: block;
+        margin-right: 90px;
+    }
+
+}
+
+
+
+
 
 
 

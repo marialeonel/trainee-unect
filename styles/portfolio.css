@@ -130,19 +130,15 @@
 }
 
 .portifolio h3{
-    font-family: ubuntu;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
     padding-bottom: 10px;
 }
 
 .portifolio p{
-    font-family: ubuntu;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    color: rgba(242, 243, 244, 0.70);
+    color: var(--cinza_claro);
 }
 
 .button-mostrarMais{

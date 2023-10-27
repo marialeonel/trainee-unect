@@ -1,4 +1,4 @@
-/*
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
@@ -438,7 +438,7 @@
         position: relative;
         margin-right: 22px;
         flex-shrink: 0;
-        scroll-snap-align: start; /*controla o descolamento dos cards
+        scroll-snap-align: start; /*controla o descolamento dos cards */
     
     }
     .NSCards1 {
@@ -545,4 +545,4 @@
     }
     
 }
- */
+
