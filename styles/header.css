@@ -6,7 +6,7 @@
     --cinza_claro: #F2F3F4;
 }
 
-.header {
+header {
     background-color: #1F64C5;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@
 
 
 @media screen and (max-width: 1102px) {
-    header.header {
+    header {
         height: 15vh;
         position: sticky;
     }
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width: 420px) {
-    header.header {
+    header {
         justify-content: space-between;
     }
 

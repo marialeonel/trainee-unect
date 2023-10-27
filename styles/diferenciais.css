@@ -137,6 +137,10 @@ div.card > p {
     width: 280px;
   }
 
+  div.card > p {
+    font-size: 14px;
+  }
+
 }
 
 @media (max-width: 660px){

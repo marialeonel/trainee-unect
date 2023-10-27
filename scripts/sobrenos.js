@@ -15,5 +15,5 @@
         animationFrameId = requestAnimationFrame(updateCarousel);
     }
 
-    setInterval(nextSlide, 3000); // Troca de slide a cada 3 segundos (3000 ms)
+    setInterval(nextSlide, 3000); 
 })();

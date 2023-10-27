@@ -12,23 +12,7 @@ section#banner {
     height: 100vh;
 }
 
-@media screen and (max-width: 763px) {
-    span.CEtxt {
-        color: var(--amarelo);
-    }
-
-    span.underlined-text{
-        font-size: 2em;
-        text-underline-offset: 8px;
-    }
-
-    div.EXPtxt {
-        bottom: 450px;
-    }
-
-}
-
-.EXP {
+div.EXP {
     background-image: url('../Fotos/time_foto.png');  
     background-color:  #494a4b;
     background-size: cover;
@@ -41,18 +25,18 @@ section#banner {
     overflow: hidden; 
 }
 
-.EXPtxt {
+div.EXPtxt {
     text-align: center;
     bottom: 360px;
     position: relative;
     font-family: 'Ubuntu', sans-serif;
 }
 
- .CEtxt {
+ span.CEtxt {
     color: white;
 } 
 
- .underlined-text {
+ span.underlined-text {
     text-decoration: underline;
     text-underline-offset: 25px; 
     margin-right: 37px;
@@ -65,3 +49,19 @@ section#banner {
     color: var(--amarelo);
 
 } 
+
+@media screen and (max-width: 763px) {
+    span.CEtxt {
+        color: var(--amarelo);
+    }
+
+    span.underlined-text{
+        font-size: 1.5em;
+        text-underline-offset: 8px;
+    }
+
+    div.EXPtxt {
+        bottom: 450px;
+    }
+
+}

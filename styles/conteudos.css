@@ -27,14 +27,14 @@ div > p.CStitulo {
     font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
     font-weight: 500;
-    color: #F2F3F4CC;
+    color: var(--cinza_claro);
 }
 
 div > p.Csubtitulo {
     font-family: 'Nunito';
     font-size: 40px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: white;
 }
 
 div > p.Csubtitulo > span.CtxtDif1 {
@@ -42,7 +42,7 @@ div > p.Csubtitulo > span.CtxtDif1 {
 }
 
 div > p.Ctxt1 {
-    color: #FFF;
+    color: white;
     font-family: Ubuntu;
     font-size: 24px;
     font-style: normal;
@@ -155,6 +155,13 @@ div > img#ebook:hover {
 
     div > img#ebook {
         margin-left: 750px;
+    }
+
+}
+
+@media screen and (min-width: 1220px) and (max-width: 1980px) {
+    div.DivConteudos > div > a > button#primeiro, button#segundo {
+        margin-top: 10;
     }
 }
 

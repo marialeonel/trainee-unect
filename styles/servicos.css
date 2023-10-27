@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 
- body {
-    max-width: 100%; 
-    overflow-x: hidden; 
-  }
   
 :root {
     --quase_preto: #000205;
@@ -16,49 +12,67 @@
 }
 
 #servicos {
+    background-image: url(../Fotos/fundo_textura.png);
+    height: auto;
     display: flex;
     flex-direction: column;
-    background-image: url(../Fotos/fundo_textura.png);
     background-size: cover;
     padding-top: 50px;
     width: auto;
-    height: 1074px;
     position: relative;
 }
 
-.DivServ{
+div.DivServ{
     padding-left: 100px;
 }
 
-.NStitulo {
-    font-size: 24px;
+div.DivServ > p.NStitulo {
+    font-size: 16px;
     font-weight: 500;
-    color: var(--cinza_claro);
-    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.805);
 }
 
-.NSsubtitulo {
+div.DivServ > p.NSsubtitulo {
     font-family: Nunito;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 700;
     color: white;
-    padding-bottom: 58px;
 }
 
-.ContainerCards {
+div.NScarouselContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 30px;
-    height: 700px;
-    column-gap: 30px;
-    margin-top: -58px;
+    overflow-x: auto;
+    z-index: 1;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
-.NSCards {
-    width: 360px;
-    height: 475px;
+div.NScarouselContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+div.NScarouselContainer {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+div.NScarousel {
+    align-self: center;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 15px;
+    flex-flow: row nowrap;
+    padding-bottom: 10px;
+}
+
+div.NSCards {
+    width: 260px;
+    height: 375px;
     border-radius: 20px;
     background-color: var(--azul_claro);
     color: var(--cinza_claro);
@@ -68,12 +82,20 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.5s ease;
     margin: 0;
     position: relative;
 }
 
-.NStxt2-browser {
+h1.NStxt1 {
+    color: var(--cinza_claro);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    position: absolute;
+    margin-bottom: 140px;
+}
+
+h3.NStxt2 {
     color:var(--amarelo);
     font-size: 14px;
     font-weight: 500;
@@ -82,93 +104,37 @@
     text-decoration: underline;
 }
 
-.NStxt2-hdd {
-    color:var(--amarelo);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 1.4px;
-    margin-top: 110px;
-    text-decoration: underline;
-}
-
-.NStxt2-mobile {
-    color:var(--amarelo);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 1.4px;
-    margin-top: 120px;
-    text-decoration: underline;
-}
-
-.NStxt3-browser {
-    color: var(--unect-branco, #F2F3F4);
+p.NStxt3 {
+    color: var(--cinza_claro);
     text-align: center;
-    font-family: Ubuntu;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.7px;
     margin-top: 20px;
     margin-left: 10px;
     position:static;
 }
 
-.NStxt3-hdd {
-    color: var(--unect-branco, #F2F3F4);
-    text-align: center;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.7px;
-    margin-top: 25px;
-    margin-left: 10px;
-    position:static;
-}
-
-.NStxt3-mobile {
-    color: var(--unect-branco, #F2F3F4);
-    text-align: center;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.7px;
-    margin-top: 25px;
-    margin-left: 10px;
-    position:static;
-}
-
-
-.Sicon {
+img.Sicon {
     position: absolute;
-    margin-bottom: 310px;
+    margin-bottom: 270px;
 }
 
-.CNT {
+div.DivButton{
     display: flex;
     padding: 30px 90px;
     justify-content: center;
     align-items: center;
-    margin-top: -100px;
 }
 
-.SBotao {
-    width: 495px;
-    height: 89px;
+div.SBotao {
+    width: 295px;
+    height: 49px;
     border-radius: 20px;
     background-color: var(--amarelo);
     color: #505C2D;
     text-align: center;
     line-height: 100px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
     box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.50);
     display: inline-flex;
     justify-content: center;
@@ -176,7 +142,11 @@
     margin-top: 50px;
 }
 
-.SBotao-Text {
+div.SBotao:hover {
+    transform:scale(1.1);
+}
+
+span.SBotao-Text {
     background-color: var(--amarelo);
     border: 0px;
     border-radius: 20px;
@@ -187,148 +157,42 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.7px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease;
     box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.50);
 
 }
 
-.ContainerCards2 {
-    display: none;
-}
+ @media screen and (max-width: 768px) {
 
-.NScarousel{
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-
-     #servicos {
-        height: 628px;
-    }
-
-    .ContainerCards {
-        display: none;
-    }
-    .DivServ{
+    div.DivServ{
       padding-left: 50px;
         
     }
-    .NStitulo {
-        font-size: 16px;
-        letter-spacing: 0.8px;
+  
+    div.NScarouselContainer {
+        justify-content: flex-start;
     }
-
-    .NSsubtitulo {
-        color: #FFF;
-        font-family: Nunito;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1px; 
-        position: absolute;
-    }
- 
-    .NScarouselContainer{
-        overflow: hidden;
-        height: 500px;
-        width: 340px;
-        max-width: 800px;
-        align-self: center;
-        margin-top: 80px;
-        padding-right: 80px;
-    }
-      
-    .NScarousel {
+    
+    div.NScarousel {
         display: flex;
     }
-      
-    .NSCards {
-        width: 275px;
-        height: 360px;
-        margin-right: 22px;
-        flex-shrink: 0;
-    }
-      
-    .NSCards1 {
-        width: 275px;
-        height: 360px;
-        border-radius: 20px;
-        background-color: var(--azul_claro);
-        color: #F2F3F4;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
-        transition: background-color 0.5s ease;
-        margin: 0;
-        position: relative;
-        margin-right: 22px;
-        flex-shrink: 0;
-        scroll-snap-align: start;
-        margin-left: 80px;
-    }
-      
-
-    .Sicon {
+    
+    img.Sicon {
         position: absolute;
         margin-top: 70px;
     }
-    .SBotao {
-        width: 275px;
-        height: 47px;
-    }
 
-    .SBotao-Text {
-        color: var(--unect-verde-escuro, #505C2D);
-        font-family: Inter;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.7px;
-    }
-
-    .NStxt1 {
-        color: var(--cinza_claro);
-        font-family: Ubuntu;
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: 1.6px;
-        position: absolute;
-        margin-bottom: 140px;
+    h1.NStxt1 {
+        margin-bottom: 110px;
     }
 } 
+
+
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #servicos {
         height: 628px;
         overflow: hidden;
-    }
-
-    .ContainerCards {
-        display: none;
-    }
-
-    .DivServ {
-        padding-left: 100px; 
-    }
-
-    .NStitulo {
-        font-size: 16px;
-        letter-spacing: 0.8px;
-    }
-
-    .NSsubtitulo {
-        color: #FFF;
-        font-family: Nunito;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1px;
     }
 
     .NScarouselContainer{
@@ -343,76 +207,9 @@
         position: relative;
     }
       
-    .NSCards {
-        width: 275px;
-        height: 360px;
-        border-radius: 20px;
-        background-color: var(--azul_claro);
-        color: #F2F3F4;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
-        transition: background-color 0.5s ease;
-        position: relative;
-        margin-right: 22px;
-        flex-shrink: 0;
-    }
-      
-    .NSCards1 {
-        width: 275px;
-        height: 360px;
-        border-radius: 20px;
-        background-color: var(--azul_claro);
-        color: #F2F3F4;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
-        transition: background-color 0.5s ease;
-        margin: 0;
-        position: relative;
-        margin-right: 22px;
-        flex-shrink: 0;
-        scroll-snap-align: start;
-        margin-left: 40px;
-    }
-      
-    .Sicon {
-        position: absolute;
-        margin-top: 70px;
-    }
-
-    .SBotao-Text {
-        color: var(--unect-verde-escuro, #505C2D);
-        font-family: Inter;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.7px;
-
-    }
-
-    .SBotao {
-        width: 275px;
-        height: 47px;
-    }
-
-    .NStxt1 {
-        color: var(--unect-branco, #F2F3F4);
-        font-family: Ubuntu;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1.6px;
-        position: absolute;
-        margin-bottom: 140px;
+    div.NSCards {
+        width: 175px;
+        height: 260px;
     }
     
 }
@@ -420,129 +217,17 @@
 
 
 @media screen and (min-width: 1000px) and (max-width: 1600px) {
-
-    .NSCards {
-        width: 360px;
-        height: 475px;
-        border-radius: 20px;
-        background-color: #2377ED;
-        color: #F2F3F4;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
-        transition: background-color 0.5s ease;
-        margin: 0;
-        position: relative;
-        margin-right: 22px;
-        flex-shrink: 0;
-        scroll-snap-align: start; /*controla o descolamento dos cards */
-    
-    }
-    .NSCards1 {
-        width: 360px;
-        height: 475px;
-        border-radius: 20px;
-        margin-left: 50px;
-    }
-
-    .SBotao {
-        margin-bottom: 100px;
-    }
-
-
-} 
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
-
-    .ContainerCards {
-        display: none;
-    }
 
     #servicos {
-        height: 628px;
+        height: 700px;
     }
 
-    .DivServ{
-        padding-left: 100px; 
-    }
-
-    .NStitulo {
-        font-size: 16px;
-        letter-spacing: 0.8px;
-    }
-
-    .NSsubtitulo {
-        font-size: 20px;
-        letter-spacing: 1px;
-
-    }
-
-    .NScarouselContainer{
-        overflow: hidden;
-        position: relative;
-        height: 500px;
-        width: 1000px;
-        align-self: center;
-        margin-top: -30px;
-      }
-      
-      .NScarousel {
-        display: flex;
-        position: relative;
-      }
-      
-    .NSCards {
-        width: 275px;
-        height: 360px;
-        position: relative;
-        margin-right: 22px;
-        flex-shrink: 0;
-    }
-      
-    .NSCards1 {
-        width: 275px;
-        height: 360px;
-        border-radius: 20px;
-        background-color: var(--azul_claro);
-        color: #F2F3F4;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
-        transition: background-color 0.5s ease;
-        margin: 0;
-        position: relative;
-        margin-right: 22px;
-        flex-shrink: 0;
-        scroll-snap-align: start;
-        margin-left: 60px;
-    }
-      
-    .Sicon {
-        position: absolute;
-        margin-top: 70px;
-    }
-
-    .SBotao {
-        width: 275px;
-        height: 47px;
-        margin-bottom: 0;
-    }
-    .NStxt1 {
-        color: var(--unect-branco, #F2F3F4);
-        font-family: Ubuntu;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1.6px;
-        position: absolute;
-        margin-bottom: 140px;
-    }
+    div.NSCards {
+        width: 260px;
+        height: 375px;
     
-}
+    }
+
+} 
+
 
