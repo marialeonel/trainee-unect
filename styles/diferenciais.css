@@ -116,7 +116,7 @@ div.card > p {
   margin: 20px 15px 0 15px;
 }
 
-@media (max-width: 1290px){
+@media screen and (max-width: 1290px){
   div.card-wraper{
     justify-content: flex-start;
     padding-right: 200px;
@@ -131,30 +131,20 @@ div.card > p {
     margin-top: 286px;
   }
 
-  div.card {
-    width: 10px;
-    height: 290px;
-    width: 280px;
-  }
-
   div.card > p {
     font-size: 14px;
   }
 
 }
 
-@media (max-width: 660px){
+@media screen and (max-width: 660px){
   div.card-wraper{
     justify-content: flex-start;
     padding-left: 200px;
   }
-  #diferenciais > p.subtitulo{
-    width: 207px;
-  }
 
-  div.card{
-    width: 275px;
-    height: 400px;
+  #diferenciais > p.subtitulo{
+    width: 307px;
   }
 
   #diferenciais > div#borda > img#direita {

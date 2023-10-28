@@ -38,25 +38,16 @@
                 <ul class="Htxt1">Contato</ul>
             </a>
         </div> 
-         <span id="hamburguer" class="material-symbols-outlined" onclick="toggleMenu()">
+         <span id="hamburguer" class="material-symbols-outlined">
             menu
         </span>
 
-        <span id="close" class="material-symbols-outlined" onclick="toggleMenu()">
+        <span id="close" class="material-symbols-outlined">
             close
         </span>
         
             
     </header>
-    <!-- <nav id="menu-mobile">
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#portifolios">Portfólio</a></li>
-            <li><a href="#sobre-nos">Sobre Nós</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav> -->
 
     <section id="banner">
         <div class="EXP">
@@ -161,7 +152,7 @@
               <p>Landing Page • Responsivo</p>
             </a>
     
-            <div href="" class="portifolio">
+            <div href="#" class="portifolio">
               <h3>ZAMPRO</h3>
               <p>Design • Sistema</p>
             </div>
@@ -342,12 +333,10 @@
                   <input type="checkbox" id="termos" required>
                   <label for="scales"><a href="src/LGPD UNECT 1.pdf">Li e concordo com os termos</a></label>
                 </div>
-        
-        
-        
+      
                 <button id="Botao-enviar" type="submit">Enviar <img src="https://unect.com.br/src/imgBotao.svg" alt="seta enviar"></button>
               </form>
-        
+              
             </div>
         
         </section>
@@ -396,27 +385,6 @@
 
         </section>
     </footer> 
-
-    <script>
-        let menu_mobile = document.querySelector('.menu-mobile')
-
-        function toggleMenu(){
-            if (menu_mobile.style.display == 'flex') {
-                menu_mobile.style.display = 'none'
-            } else {
-                menu_mobile.style.display = 'flex'
-            }
-        }
-
-        function mudouTamanho(){
-            if (window.innerWidth >= 1102) {
-                menu_mobile.style.display= 'block'
-            } else {
-                menu_mobile.style.display = 'none'
-            }
-        }
-
-    </script>
 
 </body>
 </html>

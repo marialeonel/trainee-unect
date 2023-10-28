@@ -81,18 +81,9 @@ div.Linha > hr.horizontal-line {
     padding-bottom: 8px;
 }
 
-.Fimg1 {
+img.Fimg1 {
     margin-top: 30px;
     display: flex;
-}
-
-#animated_image {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-#animated_image:hover {
-    transform: translateY(-5px);
 }
 
 a {

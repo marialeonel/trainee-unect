@@ -53,7 +53,7 @@ div.containerPortifilios{
     position: relative;
 }
 
-a.portifolio{
+a.portifolio, div.portifolio{
     width: 540px;
     height: 305px;
     border-radius: 20px;
@@ -91,7 +91,7 @@ a.portifolio:nth-child(6){
 a.portifolio:nth-child(7){
     background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/cotton-portfolio.png);
 }
-a.portifolio:nth-child(8){
+div.portifolio:nth-child(8){
     background-image: linear-gradient(#000205B2, #11111180), url(../Fotos/portfolio/zampro-portfolio.png);
 }
 
@@ -124,7 +124,7 @@ a.portifolio:nth-child(7):hover{
     background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../Fotos/portfolio/cotton-portfolio.png);
     color: white;
 }
-a.portifolio:nth-child(8):hover{
+div.portifolio:nth-child(8):hover{
     background-image: linear-gradient(rgba(0, 2, 5, 0.80),rgba(0, 2, 5, 0.80)), url(../Fotos/portfolio/zampro-portfolio.png);
     color: white;
 }
@@ -133,13 +133,13 @@ a.portifolio:hover{
     transform: translateY(-20px);
 }
 
-a.portifolio > h3{
+a.portifolio > h3, div.portifolio > h3{
     font-size: 24px;
     font-weight: 700;
     padding-bottom: 10px;
 }
 
-a.portifolio > p{
+a.portifolio > p, div.portifolio > p{
     font-size: 16px;
     font-weight: 500;
     color: var(--cinza_claro);
@@ -190,7 +190,7 @@ a.portifolio > p{
 }
 
 @media screen and (max-width: 1440px){
-    .portifolio{
+    a.portifolio, div.portifolio{
       width: 300px;
       height: 250px;
     }
@@ -222,6 +222,8 @@ a.portifolio > p{
         height: auto;
         padding-right: 25px;
     }
+
+    
     .button-mostrarMais{
       display: none;
     }
@@ -241,17 +243,6 @@ a.portifolio > p{
         padding-bottom: 25px;
     }
 
-    div.portifolio-wraper{
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        overflow-x: auto;
-    }
-
-    div.containerPortifilios{
-        flex-flow: row nowrap;
-        height: auto;
-        padding-right: 25px;
-    }
     .button-mostrarMais{
       display: none;
     }

@@ -203,7 +203,6 @@ button#Botao-enviar:hover {
     background: #3297b9;
 }
 
-
 @media screen and (max-width: 1020px) {
     #contatos {
         flex-direction: column;
